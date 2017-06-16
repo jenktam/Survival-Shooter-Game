@@ -19,3 +19,18 @@ This is an isometric shooter game about a boy who has a nightmare about his toys
 * Lerp: smoothly moves between 2 positions via Vector3.Lerp()
 * Prefabs: hard-drive asset that can save, export and use in other apps, files. much more beneficial to turn things into prefabs
 
+# Enemies
+
+## Adding Enemies
+* Hit Particles - assets that add affects when character hit
+
+
+## Triggers
+* Calls function script whenever something rouches trigger
+* not interested in trigger's interactions with scene view
+* on Sphere Collider, tick 'Is Trigger' to indicate that it won't bump into anything, but just a trigger
+* Nav Mesh Agent Component
+    * not moving enemies using physics like with player
+    * special AI to move enemies
+    * will naturally track and follow target while avoiding objects
+    * bake nav mesh agents
