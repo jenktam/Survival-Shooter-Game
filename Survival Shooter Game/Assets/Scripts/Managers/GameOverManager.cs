@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public PlayerHealth playerHealth;
-    public float restartDelay = 10f;
+    //public float restartDelay = 10f;
 
 
     Animator anim;
-    float restartTimer;
+    //float restartTimer;
 
     void Awake()
     {
