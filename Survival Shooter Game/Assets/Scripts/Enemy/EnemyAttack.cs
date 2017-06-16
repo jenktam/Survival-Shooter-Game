@@ -9,9 +9,9 @@ public class EnemyAttack : MonoBehaviour
 
     Animator anim;
     GameObject player;
-    //enemy has referene to playerHealth so knows when to damage it.
+    //enemy has reference to playerHealth so knows when to damage it.
     PlayerHealth playerHealth;
-    //EnemyHealth enemyHealth;
+    EnemyHealth enemyHealth;
     bool playerInRange;
     float timer;
 
@@ -20,7 +20,7 @@ public class EnemyAttack : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag ("Player");
         playerHealth = player.GetComponent <PlayerHealth> ();
-        //enemyHealth = GetComponent<EnemyHealth>();
+        enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent <Animator> ();
     }
 
@@ -47,7 +47,10 @@ public class EnemyAttack : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer >= timeBetweenAttacks && playerInRange/* && enemyHealth.currentHealth > 0*/)
+        //i=If time to attack and player in range and enemy is not dead yet.
+        //Then enemy attack player and stop when dead
+        if(timer >= timeBetweenAttacks && playerInRange 
+            && enemyHealth.currentHealth > 0)
         {
             Attack ();
         }

@@ -59,9 +59,9 @@ public class EnemyHealth : MonoBehaviour
     void Death ()
     {
         isDead = true;
-
+        // is player hits enemies, enemies won't be obstacls anymore
         capsuleCollider.isTrigger = true;
-
+        //enemy knows dead and plays death audio clip
         anim.SetTrigger ("Dead");
 
         enemyAudio.clip = deathClip;
@@ -72,6 +72,7 @@ public class EnemyHealth : MonoBehaviour
     public void StartSinking ()
     {
         GetComponent <UnityEngine.AI.NavMeshAgent> ().enabled = false;
+        //isKinematic rigid body prevents Unity from re-calculating static geometry. Unity will ignore rigid body if kinematic
         GetComponent <Rigidbody> ().isKinematic = true;
         isSinking = true;
         //ScoreManager.score += scoreValue;

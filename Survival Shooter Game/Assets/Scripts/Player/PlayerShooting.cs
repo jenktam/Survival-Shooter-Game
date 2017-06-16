@@ -79,6 +79,7 @@ public class PlayerShooting : MonoBehaviour
         }
         else
         {
+            //draws line to end even if gun doesn't hit anything
             gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
         }
     }
