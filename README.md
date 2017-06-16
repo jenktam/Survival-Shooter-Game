@@ -25,7 +25,7 @@ This is an isometric shooter game about a boy who has a nightmare about his toys
 * Hit Particles - assets that add affects when character hit
 
 
-## Triggers
+## Triggs
 * Calls function script whenever something youches trigger
 * not interested in trigger's interactions with scene view
 * on Sphere Collider, tick 'Is Trigger' to indicate that it won't bump into anything, but just a trigger
