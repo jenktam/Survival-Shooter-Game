@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
 
     Animator anim;
     AudioSource playerAudio;
+    //reference PlayerMovement so player can't move around once dead
     PlayerMovement playerMovement;
     //PlayerShooting playerShooting;
     bool isDead;
@@ -26,7 +27,8 @@ public class PlayerHealth : MonoBehaviour
     void Awake ()
     {
         anim = GetComponent <Animator> ();
-        playerAudio = GetComponent <AudioSource> ();
+        playerAudio = GetComponent <AudioSource> (); 
+        //to reference PlayerMovement script
         playerMovement = GetComponent <PlayerMovement> ();
         //playerShooting = GetComponentInChildren <PlayerShooting> ();
         currentHealth = startingHealth;

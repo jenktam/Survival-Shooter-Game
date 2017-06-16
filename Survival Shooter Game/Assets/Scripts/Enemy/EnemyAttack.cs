@@ -9,6 +9,7 @@ public class EnemyAttack : MonoBehaviour
 
     Animator anim;
     GameObject player;
+    //enemy has referene to playerHealth so knows when to damage it.
     PlayerHealth playerHealth;
     //EnemyHealth enemyHealth;
     bool playerInRange;
