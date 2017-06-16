@@ -75,7 +75,7 @@ public class EnemyHealth : MonoBehaviour
         //isKinematic rigid body prevents Unity from re-calculating static geometry. Unity will ignore rigid body if kinematic
         GetComponent <Rigidbody> ().isKinematic = true;
         isSinking = true;
-        //ScoreManager.score += scoreValue;
+        ScoreManager.score += scoreValue;
         Destroy (gameObject, 2f);
     }
 }
