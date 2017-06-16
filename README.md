@@ -22,7 +22,9 @@ This is an isometric shooter game about a boy who has a nightmare about his toys
 ## Enemies
 
 ### Adding Enemies
-* Hit Particles - assets that add affects when character hit
+* Hit Particles - assets that add affects when character hit. All enemies should have these.
+* Use prefab and drag character into hierarchy. Make sure to add RigidBody Component, Capsule Collider, Sphere Collider, Audio Source, Nav Mesh Agents
+* Create and add scripts to enemy object: EnemyMovement, EnemyAttack, EnemyHealth
 
 
 ### Triggers
@@ -59,3 +61,10 @@ This is an isometric shooter game about a boy who has a nightmare about his toys
     * PlayerShooting Script -> Player/GunBarrelEnd in Hierarchy
     * transform.forward = means moving along z-axis, directly away from player
     * Raycast. if hit something, shootHit variable will say what it hit. if not hit, ray will keep going
+
+## Hierarchy
+* lowest child object rendered in front of everything else, so put layers that want to see first at the bottom
+* reorder children of HUDCanvas using drag and drop in Hierarchy
+
+## UI Components
+* to make things hidden at beginning of game, turn color's alpha number to 0.
