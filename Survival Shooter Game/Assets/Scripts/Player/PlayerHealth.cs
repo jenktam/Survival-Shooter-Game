@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     AudioSource playerAudio;
     //reference PlayerMovement so player can't move around once dead
     PlayerMovement playerMovement;
-    //PlayerShooting playerShooting;
+    PlayerShooting playerShooting;
     bool isDead;
     bool damaged;
 
@@ -30,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
         playerAudio = GetComponent <AudioSource> (); 
         //to reference PlayerMovement script
         playerMovement = GetComponent <PlayerMovement> ();
-        //playerShooting = GetComponentInChildren <PlayerShooting> ();
+        playerShooting = GetComponentInChildren<PlayerShooting>();
         currentHealth = startingHealth;
     }
 
@@ -70,7 +70,7 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
 
-        //playerShooting.DisableEffects ();
+        playerShooting.DisableEffects();
 
         anim.SetTrigger ("Die");
 
@@ -78,7 +78,7 @@ public class PlayerHealth : MonoBehaviour
         playerAudio.Play ();
 
         playerMovement.enabled = false;
-        //playerShooting.enabled = false;
+        playerShooting.enabled = false;
     }
 
 
