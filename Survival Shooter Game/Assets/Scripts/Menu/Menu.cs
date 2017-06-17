@@ -30,4 +30,10 @@ public class Menu : MonoBehaviour
     {
         Application.LoadLevel(1);
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("has quit game");
+        Application.Quit();
+    }
 }

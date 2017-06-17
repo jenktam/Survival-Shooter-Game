@@ -17,14 +17,14 @@ Platform assembly: C:\Users\Jen\Documents\FullStack-Academy\Survival-Shooter-Gam
 Loading C:\Users\Jen\Documents\FullStack-Academy\Survival-Shooter-Game\Survival Shooter Game (PC)_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Jen\Documents\FullStack-Academy\Survival-Shooter-Game\Survival Shooter Game (PC)_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Jen\Documents\FullStack-Academy\Survival-Shooter-Game\Survival Shooter Game (PC)_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.094 seconds
+- Completed reload, in  0.211 seconds
 Platform assembly: C:\Users\Jen\Documents\FullStack-Academy\Survival-Shooter-Game\Survival Shooter Game (PC)_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Jen\Documents\FullStack-Academy\Survival-Shooter-Game\Survival Shooter Game (PC)_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.097076 ms
+UnloadTime: 1.344166 ms
 Failed to create agent because there is no valid NavMesh
  
 (Filename:  Line: 598)
@@ -68,61 +68,11 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename:  Line: -1)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 7068 -> priority: 1 
-  Thread -> id: 6704 -> priority: 1 
-  Thread -> id: 4a80 -> priority: 1 
-  Thread -> id: 3808 -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.114988 ms
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 860.
-Total: 0.437538 ms (FindLiveObjects: 0.047137 ms CreateObjectMapping: 0.037253 ms MarkObjects: 0.342503 ms  DeleteObjects: 0.010263 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.628650 ms
-Failed to create agent because there is no valid NavMesh
+  Thread -> id: 513c -> priority: 1 
+  Thread -> id: 58b0 -> priority: 1 
+  Thread -> id: 56cc -> priority: 1 
+  Thread -> id: 75f4 -> priority: 1 
+has quit game
  
-(Filename:  Line: 598)
-
-Failed to create agent because there is no valid NavMesh
- 
-(Filename:  Line: 598)
-
-Failed to create agent because there is no valid NavMesh
- 
-(Filename:  Line: 598)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at EnemyAttack.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at EnemyMovement.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at EnemyAttack.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at EnemyMovement.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at EnemyMovement.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at EnemyAttack.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-
-Unloading 91 unused Assets to reduce memory usage. Loaded Objects now: 817.
-Total: 0.723021 ms (FindLiveObjects: 0.058161 ms CreateObjectMapping: 0.043335 ms MarkObjects: 0.320075 ms  DeleteObjects: 0.300688 ms)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
